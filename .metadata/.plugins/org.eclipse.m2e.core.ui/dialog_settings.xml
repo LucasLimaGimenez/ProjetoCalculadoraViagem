@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\PC\Desktop\Fiap  3 ano Sistemas de Informacao\Microservice and Web Engineering\Projetos Aula\checkpoint-lucaslimagimenez"/>
+			<item value="C:\Users\PC\Desktop\Entrega Microservice Java\checkpoint-lucaslimagimenez"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

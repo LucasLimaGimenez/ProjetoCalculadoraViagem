@@ -1,0 +1,35 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd"><html xmlns="http://www.w3.org/1999/xhtml"    xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+<h1 class="text-center mb-5 mt-3 display-3">Relatório Viagem</h1>
+
+<table class="table center">
+	<thead>
+		<tr>
+			<th style="font-size: 26px;">Origem</th>
+			<th style="font-size: 26px;">Destino</th>
+			<th style="font-size: 26px;">Distancia (KM)</th>
+			<th style="font-size: 26px;">Velocidade (KM/H)</th>
+			<th style="font-size: 26px;">Horas</th>
+			<th style="font-size: 26px;">Minutos</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="viagem: ${relatorio}">
+			<td style="font-size: 20px;" th:text="${viagem.getOrigem()}"></td>
+			<td style="font-size: 20px;" th:text="${viagem.getDestino()}"></td>
+			<td style="font-size: 20px;" th:text="${viagem.getDistancia()}"></td>
+			<td style="font-size: 20px;" th:text="${viagem.getVelocidade()}"></td>
+			<td style="font-size: 20px;" th:text="${viagem.calcularHoras()}"></td>
+			<td style="font-size: 20px;" th:text="${viagem.calcularMinutos()}"></td>
+		</tr>
+	</tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
